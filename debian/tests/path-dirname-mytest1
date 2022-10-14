@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+cp debian/tests/mytest1.js "$AUTOPKGTEST_TMP"
+nodejs "$AUTOPKGTEST_TMP"/mytest1.js
+
