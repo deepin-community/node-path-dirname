@@ -1,0 +1,18 @@
+Description: Drop test that depends on directory name
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2021-11-22
+
+--- a/test.js
++++ b/test.js
+@@ -15,8 +15,8 @@
+ // https://github.com/nodejs/node/blob/0f2f8e/test/parallel/test-path.js#L67-L115
+ 
+ // path.dirname tests
+-assert.strictEqual(pathDirname(f).substr(-13),
+-            process.platform === 'win32' ? '\\path-dirname' : '/path-dirname');
++//assert.strictEqual(pathDirname(f).substr(-13),
++//            process.platform === 'win32' ? '\\path-dirname' : '/path-dirname');
+ 
+ assert.strictEqual(path.posix.dirname('/a/b/'), '/a');
+ assert.strictEqual(path.posix.dirname('/a/b'), '/a');

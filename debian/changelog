@@ -1,9 +1,33 @@
-node-path-dirname (1.0.2-1.1) unstable; urgency=medium
+node-path-dirname (1.0.2-2) unstable; urgency=medium
 
-  * Non maintainer upload by the Reproducible Builds team.
-  * No source change upload to rebuild on buildd with .buildinfo files.
+  * Team upload
 
- -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 15:15:38 +0100
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+  * Apply multi-arch hints.
+    + node-path-dirname: Add Multi-Arch: foreign.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Bump debhelper from old 12 to 13.
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Drop dependency to nodejs
+  * Use dh-sequence-nodejs auto install
+  * Enable upstream test (assert)
+
+ -- Yadd <yadd@debian.org>  Mon, 22 Nov 2021 11:08:11 +0100
 
 node-path-dirname (1.0.2-1) unstable; urgency=low
 

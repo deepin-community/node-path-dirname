@@ -1,5 +1,2 @@
-Tests: require
-Depends: node-path-dirname
-
 Tests: path-dirname-mytest1
-Depends: node-path-dirname, node-assert
+Depends: @, nodejs, node-assert
