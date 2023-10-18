@@ -1,22 +1,22 @@
 Source: node-path-dirname
-Section: web
+Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Ying-Chun Liu (PaulLiu) <paulliu@debian.org>
-Build-Depends:
- debhelper (>= 9)
- , dh-buildinfo
- , nodejs
-Standards-Version: 4.0.0
-Homepage: https://github.com/es128/path-dirname#readme
-Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-path-dirname.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-path-dirname.git
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-assert <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-path-dirname
+Vcs-Git: https://salsa.debian.org/js-team/node-path-dirname.git
+Homepage: https://github.com/es128/path-dirname
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-path-dirname
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: Node.js library for function path.dirname ponyfill
  This was needed in order to expose path.posix.dirname() on Node.js v0.10
  .
